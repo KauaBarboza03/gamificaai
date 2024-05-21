@@ -170,7 +170,7 @@ h2 {
 }
 
 #cases h2 {
-    margin-bottom: 70px;
+    margin-top: 70px;
 
 }
 
@@ -290,7 +290,7 @@ h2 {
 }
 
 #portifolio a:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     transition: 200ms;
 }
 
@@ -332,7 +332,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
 
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .campo-descricao {
@@ -560,16 +560,12 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width:800px) {
+
+@media screen and (max-width: 800px) {
+
     .card {
         flex-basis: 45%;
     }
-
-    .banner {
-        background-size: cover;
-    }
-
-
 }
 
 @media screen and (max-width:700px) {
@@ -597,7 +593,8 @@ footer .container-grid {
     }
 
     .campo,
-    .campo-descricao #contato form button {
+    .campo-descricao,
+    #contato form button {
         width: 75%;
     }
 
@@ -688,8 +685,6 @@ footer .container-grid {
         border-radius: 0;
     }
 
-
-
 }
 
 @media screen and (max-width: 400px) {
@@ -707,7 +702,7 @@ footer .container-grid {
 
     footer img {
         width: 200px;
-        
+
     }
 
 }
