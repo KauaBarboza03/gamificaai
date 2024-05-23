@@ -62,12 +62,40 @@ function mostrarProximoSlide() {
     // Remover o slide anterior
     banner.classList.remove(slides[slideAtual])
 
-    // Somar 1 na variavel slideAtual
-    slideAtual++
-
+    if (slideAtual < 2) {
+        // Somar 1 na variavel slideAtual
+        slideAtual++
+    }else {
+        // Voltar para o primeiro lugar
+        slideAtual = 0
+    }
 
     // Mostrar slide de acordo com slide atual
     banner.classList.add(slides[slideAtual])
 
 }
 
+function mostrarSlideAnterior () {
+    // Remover o slide anterior
+    banner.classList.remove(slides[slideAtual])
+
+    if (slideAtual > 0) {
+        // Somar 1 na variavel slideAtual
+        slideAtual--
+    }else {
+        // Voltar para o primeiro lugar
+        slideAtual = 2
+    }
+    
+    // Mostrar slide de acordo com slide atual
+    banner.classList.add(slides[slideAtual])
+
+}
+
+function selecionarSlide (indicesSlide) {
+    banner.classList.remove(slides[slideAtual])
+    
+    slideAtual = indicesSlide
+
+    banner.classList.add(slides[slideAtual])
+}
